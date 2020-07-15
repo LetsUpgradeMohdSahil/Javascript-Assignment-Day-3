@@ -1,0 +1,41 @@
+Q 2. Write the difference between var, let and const with code examples
+Ans. var, let and const keywords are used to declare variables in Javascript. While var is the oldest keyword for declaring variables from its inception, let and const are introduced in ES6.
+Differences are:
+
+1. Assignment
+	let and var can be reassigned to a new value while const cannot be reassigned.
+	This makes const the best option for declaring values that do not change in the program, preventing reassignment.
+	Example:
+		var a = 10;
+		a = 20;
+		//output: 20
+		console.log(a);
+
+		let b = 'hello';
+		b = 'world';
+		//output: 'world'
+		console.log(b);
+
+		const c = 'hello'
+		//Error: Uncaught TypeError: Assignment to constant variable.
+		c = 'world'
+
+2. Scope
+	var is function-scoped.
+		Example:
+			function func(){
+				var funcVar = 'I am function var';
+			}
+
+			//output:  Uncaught ReferenceError: funcVar is not defined
+			console.log(funcVar);
+	
+	let and const are block-scoped(any code within {} braces).
+		Example:
+			{
+				let name="Sahil";
+			}
+			
+			//output:  Uncaught ReferenceError: funcVar is not defined
+			console.log(name);
+	

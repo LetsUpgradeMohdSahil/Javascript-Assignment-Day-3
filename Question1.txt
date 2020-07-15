@@ -1,0 +1,12 @@
+Q 1. Explore and explain the various methods in console function Explain them
+Ans. Console object provide access tot eh browser debugging console. Below are the various type of methods of console object
+1. console.assert() : Write a message to the console, only if the first argument is false:
+2. console.clear(): It will clear all the messages and logs from the console
+3. console.count(): It will log the number of times count() is called
+4. console.error(): It gives the error message to the console
+5. console.log(): It print the output to the console which is being passed to it
+6. console.time(): It starts a times and check how long will the operation takes
+7. console.timeEnd(): It stops the times which is start from console.time()
+8. console.warn(): It gives the warning message to the console
+9. console.table(): It print the table in the console as output when we pass the (object, array) to it
+10. console.info(): It print the message to the console
